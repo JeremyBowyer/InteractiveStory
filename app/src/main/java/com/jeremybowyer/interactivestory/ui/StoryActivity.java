@@ -1,9 +1,12 @@
-package com.jeremybowyer.interactivestory;
+package com.jeremybowyer.interactivestory.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.jeremybowyer.interactivestory.R;
+import com.jeremybowyer.interactivestory.model.Page;
 
 public class StoryActivity extends AppCompatActivity {
 
