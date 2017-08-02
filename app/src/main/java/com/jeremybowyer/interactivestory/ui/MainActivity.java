@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        nameField = (EditText) findViewById(R.id.nameEditText);
-        startButton = (Button) findViewById(R.id.startButton);
+        nameField = (EditText)findViewById(R.id.nameEditText);
+        startButton = (Button)findViewById(R.id.startButton);
 
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +30,12 @@ public class MainActivity extends AppCompatActivity {
                 startStory(name);
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        nameField.setText("");
     }
 
     private void startStory(String name) {
